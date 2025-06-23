@@ -1,0 +1,167 @@
+/* Reset e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/* Cabeçalho */
+header {
+    position: fixed;
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 600px;
+    gap: 10%;
+    z-index: 2;
+}
+
+header img {
+    width: 400px;
+}
+
+header nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+/* Seção principal */
+section {
+    background-image: radial-gradient(#c0cfff, #a2b8ff);
+    height: 100vh;
+    position: relative;
+    padding-top: 100px;
+}
+
+.list {
+    width: 70vw;
+    margin: auto;
+    height: 100%;
+    position: relative;
+}
+
+.item {
+    position: absolute;
+    inset: 0;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+.obra-img {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid #314482;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.obra-img img {
+    width: 100%;
+    display: block;
+}
+
+.content {
+    position: absolute;
+    right: 100px;
+    width: 80%;
+    height: 77%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 20px;
+}
+
+.tipo-obra {
+    font-weight: bold;
+}
+
+.titulo-obra {
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.description {
+    color: #000;
+    font-size: 15px;
+    text-align: right;
+    max-width: 500px;
+}
+
+.information {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    height: 35px;
+    width: 120px;
+    line-height: 35px;
+    text-transform: uppercase;
+    border: 2px solid #8ea8ff;
+    background-color: #314482;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.arrows {
+    width: 80vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-button {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-button img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Rodapé */
+footer {
+    position: relative;
+    padding: 20px;
+    background-color: #314482;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer img {
+    width: 150px;
+    margin-bottom: 10px;
+}
